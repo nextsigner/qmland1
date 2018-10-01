@@ -73,76 +73,6 @@ Item {
         }
     }
 
-    /*Column{
-        id:x2
-        width: r.width-app.fs
-        anchors.centerIn: r
-        opacity: 0.0
-        spacing: app.fs
-        Behavior on opacity{NumberAnimation{duration:500}}
-        Text{
-            text:'<b>Còdigo QML - Elemento Item</b>'
-            font.pixelSize: app.fs
-            color: app.c2
-        }
-        Item{
-            width: parent.width-app.fs*6
-            height: r.height-app.fs*3
-            Marco{
-                id:mm0
-                opacity: 0.0
-                Behavior on opacity{NumberAnimation{duration:500}}
-                Text{
-                    text:'<b>DECLARATIVO</b>'
-                    font.pixelSize: app.fs
-                    color: app.c2
-                    anchors.right: parent.right
-                    anchors.rightMargin: app.fs*0.5
-                    anchors.top: parent.top
-                    anchors.topMargin: app.fs*0.5
-                }
-            }
-            Column{
-                id:colc1
-                spacing: app.fs*0.5
-                Text{
-                    text:'import QtQuick 2.0\nWindow{\n         width:300\n         height:300'
-                    font.pixelSize: app.fs
-                    color: app.c2
-                }
-                Text{
-                    text:'function miFuncionJavaScript(){\n           console.log(\'Hola JavaScript en QML!\')\n}'
-                    font.pixelSize: app.fs
-                    color: 'red'
-                    anchors.left: parent.left
-                    anchors.leftMargin: app.fs*3
-                    Marco{
-                        id:mm1
-                        opacity: 0.0
-                        padding:app.fs*0.2
-                        Behavior on opacity{NumberAnimation{duration:500}}
-                        Text{
-                            text:'<b>IMPERATIVO</b>'
-                            font.pixelSize: app.fs
-                            color: 'red'
-                            anchors.right:  parent.right
-                            anchors.rightMargin: app.fs*0.5
-                            anchors.top: parent.bottom
-                            anchors.bottomMargin: app.fs*0.5
-                        }
-                    }
-                }
-                Text{
-                    text:'}\n'
-                    font.pixelSize: app.fs
-                    color: app.c2
-                }
-            }
-        }
-    }
-*/
-
-
     Timer{
         running: r.visible
         repeat: true
@@ -164,6 +94,7 @@ Item {
     }
 
     Component.onCompleted: {
+        controles.asec=[0,10,31]
         var at='
         Elemento QML Item
 

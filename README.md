@@ -1,4 +1,4 @@
-# qmlandiamod1
+# qmland1
 
 It's a Qmlandia QML Module create by @nextsigner.
 

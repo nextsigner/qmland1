@@ -10,7 +10,7 @@ Item {
         id:x1
         opacity: 0.0
         Behavior on opacity{NumberAnimation{duration:500}}
-        text:'<b>Elemento QML</b><br><b>2 Item{}</b>'
+        text:'<b>Elemento QML</b><br><b>Item{}</b>'
         anchors.centerIn: r 
         font.pixelSize: app.fs*2
         color: app.c2
@@ -73,6 +73,15 @@ Item {
         }
     }
 
+    //Aviso
+    Text{
+        id:xAviso
+        text:'<b>Secciòn en Construcciòn</b><br>Se modificarà audio y animaciones...'
+        anchors.horizontalCenter: r.horizontalCenter
+        font.pixelSize: app.fs*2
+        color: app.c2
+        horizontalAlignment: Text.AlignHCenter
+    }
     Timer{
         running: r.visible
         repeat: true

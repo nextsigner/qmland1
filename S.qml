@@ -79,7 +79,7 @@ Item {
         text:'<b>Secciòn en Construcciòn</b><br>Se modificarà audio y animaciones...'
         anchors.horizontalCenter: r.horizontalCenter
         font.pixelSize: app.fs*2
-        color: app.c2
+        color: 'red'
         horizontalAlignment: Text.AlignHCenter
     }
     Timer{

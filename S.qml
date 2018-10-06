@@ -76,7 +76,7 @@ Item {
     //Aviso
     Text{
         id:xAviso
-        text:'<b>Secciòn en Construcciòn!232222ddd</b><br>Se modificarà audio y animaciones...'
+        text:'<b>Secciòn en Construcciòn!232222fffff</b><br>Se modificarà audio y animaciones...'
         anchors.horizontalCenter: r.horizontalCenter
         font.pixelSize: app.fs*2
         color: 'red'

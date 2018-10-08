@@ -10,7 +10,7 @@ Item {
         id:x1
         opacity: 0.0
         Behavior on opacity{NumberAnimation{duration:500}}
-        text:'<b>Elemento QML</b><br><b>3 Item{}</b>'
+        text:'<b>Elemento QML</b><br><b>Item{}</b>'
         anchors.centerIn: r 
         font.pixelSize: app.fs*2
         color: app.c2
@@ -89,7 +89,7 @@ Item {
         onTriggered: {
             x1.opacity=app.p(0, 6)?1.0:0.0
 
-            x2.opacity=app.p(6, 500)?1.0:0.0
+            x2.opacity=app.p(6, 47)?1.0:0.0
             mm1.opacity=app.p(10, 13)?1.0:0.0
             mm2.opacity=app.p(14, 30)?1.0:0.0
             if(app.p(14, 30)){
@@ -99,6 +99,8 @@ Item {
             }else{
                 txtVer.text='1.4'
             }
+
+            x3.opacity=app.p(47, 500)?1.0:0.0
         }
     }
     function e(n){
@@ -134,6 +136,7 @@ Item {
         at+=e(20)
         at+='Si la propiedad es definida como verdadero, el elemento serà visible en tanto y en cuanto contenga elementos internos visibles. Si no contiene elementos serà visible pero no veremos nada en pantalla. Si èsta propiedad es definida con el valor false, el elemento no serà visible, tampoco sus elementos internos. Por defecto la propiedad VISIBLE es verdadero.                                                                           La propiedad de opacidad se utiliza para definir el nivel de transparencia del elemento. Es        ta propiedad requiere de un valor del tipo nùmero real cuyo valor màximo es 1.0 y el valor mìnimo es 0.0. Por ejemplo si el valor es 1.0 el elemento se visualizarà con plena opacidad y cero transparencia. Si el valor es 0.5 el elemento se visualizarà semi transparente. Si el valor es 0.0, el elemento tendrà un nivel de transparencia plena, esto provocarà que el elemento sea invisible en pantalla independientemente de cuàl sea su propiedad VISIBLE.'
 
+        at+=e(20)
         at+='\n'//PQ
         at+='Este elemento nos permite crear un area invisible, sin bordes y con fondo transparente. Dentro de esta area podemos incluir otros elementos visibles o no visibles. Item, salvo raras excepciones, contendrà otros elementos en su interios. En la pràctica tiene poco sentido que este elemento Item no tenga elementos en su interior.
 

@@ -118,11 +118,7 @@ Item {
         at+='Sus propiedades principales son ejes de posicionamiento x e y, ancho, alto, visible y opacidad'
 
         at+='\n'//PN
-        at+='Las propiedades X e Y se utilizan para definir la posiciòn del elemento. Las propiedes ancho y alto se utilizan para definir el tamaño, es decir las dimensiones del elemento. Tanto las propiedades de posiciòn y de dimensiòn, ambos requieren un valor del tipo nùmero entero.
-
-La propiedad VISIBLE se utiliza para definir si el elemento es visible o no. Èsta propiedad requiere un valor del tipo booleano, TRUE o FALSE. Si la propiedad es definida como verdadero, el elemento serà visible en tanto y en cuanto contenga elementos internos visibles. Si no contiene elementos serà visible pero no veremos nada en pantalla. Si èsta propiedad es definida con el valor false, el elemento no serà visible, tampoco sus elementos internos. Por defecto la propiedad VISIBLE es verdadero.
-
-La propiedad de opacidad se utiliza para definir el nivel de transparencia del elemento. Esta propiedad requiere de un valor del tipo nùmero real cuyo valor màximo es 1.0 y el valor mìnimo es 0.0. Por ejemplo si el valor es 1.0 el elemento se visualizarà con plena opacidad y cero transparencia. Si el valor es 0.5 el elemento se visualizarà semi transparente. Si el valor es 0.0, el elemento tendrà un nivel de transparencia plena, esto provocarà que el elemento sea invisible en pantalla independientemente de cuàl sea su propiedad VISIBLE.'
+        at+='Las propiedades X e Y se utilizan para definir la posiciòn del elemento. Las propiedes ancho y alto se utilizan para definir el tamaño, es decir las dimensiones del elemento. Tanto las propiedades de posiciòn y de dimensiòn, ambos requieren un valor del tipo nùmero entero.                                      La propiedad VISIBLE se utiliza para definir si el elemento es visible o no. Èsta propiedad requiere un valor del tipo booleano, TRUE o FALSE. Si la propiedad es definida como verdadero, el elemento serà visible en tanto y en cuanto contenga elementos internos visibles. Si no contiene elementos serà visible pero no veremos nada en pantalla. Si èsta propiedad es definida con el valor false, el elemento no serà visible, tampoco sus elementos internos. Por defecto la propiedad VISIBLE es verdadero.                                                                           La propiedad de opacidad se utiliza para definir el nivel de transparencia del elemento. Esta propiedad requiere de un valor del tipo nùmero real cuyo valor màximo es 1.0 y el valor mìnimo es 0.0. Por ejemplo si el valor es 1.0 el elemento se visualizarà con plena opacidad y cero transparencia. Si el valor es 0.5 el elemento se visualizarà semi transparente. Si el valor es 0.0, el elemento tendrà un nivel de transparencia plena, esto provocarà que el elemento sea invisible en pantalla independientemente de cuàl sea su propiedad VISIBLE.'
 
         at+='\n'//PQ
         at+='Este elemento nos permite crear un area invisible, sin bordes y con fondo transparente. Dentro de esta area podemos incluir otros elementos visibles o no visibles. Item, salvo raras excepciones, contendrà otros elementos en su interios. En la pràctica tiene poco sentido que este elemento Item no tenga elementos en su interior.
@@ -138,20 +134,9 @@ Los cambios en las propiedades del elemento Item contenedor afectaràn a sus ele
         at+='Este es el elemento principal de QML de cuàl dependen la mayorìa de los elementos los cuales estàn creados a partir de este elemento Item como base. Hay que recordar que la mayorìa de los elementos QML heredan propiedades y caracterìsticas del elemento Item porque derivan o fueron construidos con èl.
 
 Conocer lo màximo posible este elemento Item, nos facilitarà muchìsimo la comprensiòn de casi la totalidad de los elementos de QML. Este elemento se llama Item porque es la palabra que se utiliza para hacer referencia a un artìculo, pàrrafo, apartado, secciòn, cosa, objeto o  parte de un texto o escrito por ejemplo en la literatura.'
-        var sp1=''
-        var sp2=''
-        sp1+=' 1'
-        for(var i=0;i<80;i++){
-            sp1+=' '
-        }
-        sp1+='2 '
-        sp2+=' 3'
-        for(var i=0;i<160;i++){
-            sp2+=' '
-        }
-        sp2+=' 4'
 
-        var at2=at.replace(/\n/g, sp2)
-        xT.at=at2.replace(/\. /g, sp1)
+
+        //var at2=at.replace(/\n/g, sp2)
+        xT.at=at.replace(/\n/g, ' ')
     }
 }

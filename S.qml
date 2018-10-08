@@ -10,7 +10,7 @@ Item {
         id:x1
         opacity: 0.0
         Behavior on opacity{NumberAnimation{duration:500}}
-        text:'<b>Elemento QML</b><br><b>1 Item{}</b>'
+        text:'<b>Elemento QML</b><br><b>2 Item{}</b>'
         anchors.centerIn: r 
         font.pixelSize: app.fs*2
         color: app.c2
@@ -138,7 +138,20 @@ Los cambios en las propiedades del elemento Item contenedor afectaràn a sus ele
         at+='Este es el elemento principal de QML de cuàl dependen la mayorìa de los elementos los cuales estàn creados a partir de este elemento Item como base. Hay que recordar que la mayorìa de los elementos QML heredan propiedades y caracterìsticas del elemento Item porque derivan o fueron construidos con èl.
 
 Conocer lo màximo posible este elemento Item, nos facilitarà muchìsimo la comprensiòn de casi la totalidad de los elementos de QML. Este elemento se llama Item porque es la palabra que se utiliza para hacer referencia a un artìculo, pàrrafo, apartado, secciòn, cosa, objeto o  parte de un texto o escrito por ejemplo en la literatura.'
-        var at2=at.replace(/\n/g, '                                                             ')
-        xT.at=at2.replace(/\. /g, '                         ')
+        var sp1=''
+        var sp2=''
+        sp1+=' 1'
+        for(var i=0;i<80;i++){
+            sp1+=' '
+        }
+        sp1+='2 '
+        sp2+=' 3'
+        for(var i=0;i<160;i++){
+            sp2+=' '
+        }
+        sp2+=' 4'
+
+        var at2=at.replace(/\n/g, sp2)
+        xT.at=at2.replace(/\. /g, sp1)
     }
 }

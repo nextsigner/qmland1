@@ -114,18 +114,19 @@ Item {
         //Pr
         at+='Elemento Item'
 
+        at+=e(40)
         at+='\n' //Req
         at+='Para utilizar este elemento es necesario importar la librerìa QtQuick. Podemos utilizar la versiones compatibles con unik y este curso tales como la versiòn 1.4, 2.0 hasta 2.5. Para unik recomendamos la versiòn 2.0. Si quieres puedes experimentar e importar versiones posteriores a las mencionadas pero no te podemos garantizar su funcionalidad. '
 
-       at+=e(80)
+       at+=e(40)
         at+='\n' //Q
         at+='Item Es un elemento posicionador y contenedor'
 
-       at+=e(80)
+       at+=e(40)
         at+='\n' //PP
         at+='Sus propiedades principales son ejes de posicionamiento x e y, ancho, alto, visible y opacidad'
 
-        at+=e(160)
+        at+=e(90)
         at+='\n'//PN
         at+='Las propiedades X e Y se utilizan para definir la posiciòn del elemento. Las propiedes ancho y alto se utilizan para definir el tamaño, es decir las dimensiones del elemento. Tanto las propiedades de posiciòn y de dimensiòn, ambos requieren un valor del tipo nùmero entero.                                      La propiedad VISIBLE se utiliza para definir si el elemento es visible o no. Èsta propiedad requiere un valor del tipo booleano, TRUE o FALSE. Si la propiedad es definida como verdadero, el elemento serà visible en tanto y en cuanto contenga elementos internos visibles. Si no contiene elementos serà visible pero no veremos nada en pantalla. Si èsta propiedad es definida con el valor false, el elemento no serà visible, tampoco sus elementos internos. Por defecto la propiedad VISIBLE es verdadero.                                                                           La propiedad de opacidad se utiliza para definir el nivel de transparencia del elemento. Esta propiedad requiere de un valor del tipo nùmero real cuyo valor màximo es 1.0 y el valor mìnimo es 0.0. Por ejemplo si el valor es 1.0 el elemento se visualizarà con plena opacidad y cero transparencia. Si el valor es 0.5 el elemento se visualizarà semi transparente. Si el valor es 0.0, el elemento tendrà un nivel de transparencia plena, esto provocarà que el elemento sea invisible en pantalla independientemente de cuàl sea su propiedad VISIBLE.'
 

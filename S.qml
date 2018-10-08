@@ -138,6 +138,7 @@ Los cambios en las propiedades del elemento Item contenedor afectaràn a sus ele
         at+='Este es el elemento principal de QML de cuàl dependen la mayorìa de los elementos los cuales estàn creados a partir de este elemento Item como base. Hay que recordar que la mayorìa de los elementos QML heredan propiedades y caracterìsticas del elemento Item porque derivan o fueron construidos con èl.
 
 Conocer lo màximo posible este elemento Item, nos facilitarà muchìsimo la comprensiòn de casi la totalidad de los elementos de QML. Este elemento se llama Item porque es la palabra que se utiliza para hacer referencia a un artìculo, pàrrafo, apartado, secciòn, cosa, objeto o  parte de un texto o escrito por ejemplo en la literatura.'
-        xT.at=at.replace(/\n/g, '                               ')
+        var at2=at.replace(/\n/g, '                               ')
+        xT.at=at2.replace(/\. /g, '               ')
     }
 }

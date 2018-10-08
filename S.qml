@@ -10,7 +10,7 @@ Item {
         id:x1
         opacity: 0.0
         Behavior on opacity{NumberAnimation{duration:500}}
-        text:'<b>Elemento QML</b><br><b>2 Item{}</b>'
+        text:'<b>Elemento QML</b><br><b>3 Item{}</b>'
         anchors.centerIn: r 
         font.pixelSize: app.fs*2
         color: app.c2
@@ -111,7 +111,7 @@ Item {
     Component.onCompleted: {
         controles.asec=[0,10,31]
         var at=''
-        at+=e(40)
+        at+=e(10)
         //Pr
         at+='Elemento Item'
 

@@ -23,7 +23,11 @@ Item {
         width: r.width-app.fs
         anchors.centerIn: r
         opacity: 0.0
+<<<<<<< HEAD
         spacing: app.fs*0.2
+=======
+        spacing: app.fs
+>>>>>>> 478ef1cb95861d749a2ba656962b5a43e943e99a
         Behavior on opacity{NumberAnimation{duration:500}}
         Text{
             text:'<b>Còdigo QML - Elemento Item</b>'
@@ -51,6 +55,7 @@ Item {
                 Marco{id:mm2;padding:app.fs*0.1}
             }
         }
+<<<<<<< HEAD
         Text{
             id:txt1
             text:'Item{\n       x:10\n       y:10\n       width:100\n       height:200\n}'
@@ -58,6 +63,8 @@ Item {
             color: app.c2
             Behavior on opacity{NumberAnimation{duration:1500}}
         }
+=======
+>>>>>>> 478ef1cb95861d749a2ba656962b5a43e943e99a
     }
 
     //3
@@ -96,6 +103,7 @@ Item {
         onTriggered: {
             x1.opacity=app.p(0, 6)?1.0:0.0
 
+<<<<<<< HEAD
 
             x2.opacity=app.p(6, 47)?1.0:0.0
             txt1.opacity=app.p(6, 9)?1.0:0.5
@@ -113,6 +121,17 @@ Item {
                 txtVer.text='2.11'
             }else{
                 txtVer.text='2.0'
+=======
+            x2.opacity=app.p(6, 47)?1.0:0.0
+            mm1.opacity=app.p(10, 13)?1.0:0.0
+            mm2.opacity=app.p(14, 30)?1.0:0.0
+            if(app.p(14, 30)){
+                txtVer.text='2.0'
+            }else if(app.p(16, 30)){
+                txtVer.text='2.5'
+            }else{
+                txtVer.text='1.4'
+>>>>>>> 478ef1cb95861d749a2ba656962b5a43e943e99a
             }
 
             x3.opacity=app.p(47, 500)?1.0:0.0
@@ -126,7 +145,11 @@ Item {
         return sp
     }
     Component.onCompleted: {
+<<<<<<< HEAD
         controles.asec=[0, 6,47]
+=======
+        controles.asec=[0,10,31]
+>>>>>>> 478ef1cb95861d749a2ba656962b5a43e943e99a
         var at=''
         at+=e(10)
         //Pr

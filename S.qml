@@ -69,6 +69,34 @@ Item {
         spacing: app.fs
         Behavior on opacity{NumberAnimation{duration:500}}
         Text{
+            text:'<b>Posicionador</b><br><b>Contenedor</b>'
+            font.pixelSize: app.fs
+            color: app.c2
+        }
+        Row{
+            spacing: app.fs*0.5
+            Item{
+                width: app.fs*8
+                height: width
+                Marco{}
+            }
+            Item{
+                width: app.fs*8
+                height: width
+                Marco{}
+            }
+        }
+    }
+
+    //4
+    Column{
+        id:x4
+        width: r.width-app.fs
+        anchors.centerIn: r
+        opacity: 0.0
+        spacing: app.fs
+        Behavior on opacity{NumberAnimation{duration:500}}
+        Text{
             text:'<b>Còdigo QML - Elemento Item</b>'
             font.pixelSize: app.fs
             color: app.c2

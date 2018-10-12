@@ -1,4 +1,6 @@
-# qmland1
+# qmodland1
+
+12/10/18 Rev 1
 
 It's a Qmlandia QML Module created by @nextsigner.
 
